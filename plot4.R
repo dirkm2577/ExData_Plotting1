@@ -18,7 +18,7 @@ with(newdata, {plot(x = newdata$full_date, y = newdata$Global_active_power, type
                                             type = "l", col = "red"))
                with(subset(newdata), points(x = newdata$full_date, y = newdata$Sub_metering_3, 
                                             type = "l", col = "blue"))
-               legend("topright", lty = 1, col = c ("black", "red", "blue"), 
+               legend("topright", lty = 1, bty = "n", col = c ("black", "red", "blue"), 
        legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), text.col = "black", 
        cex = 0.7)
        plot(x = newdata$full_date, y = newdata$Global_reactive_power, type = "l", 
